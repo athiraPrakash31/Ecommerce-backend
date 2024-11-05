@@ -6,6 +6,7 @@ const router = express.Router();
  router.get ('/allProducts', productController.getAllProducts);
  router.post('/register',userController.register);
  router.post('/login',userController.login);
+ router.post('/addtoCart',productController.addtoCart)
  router.get('/getOneProduct/:id', productController.getOneProduct)
 
  export default router;
